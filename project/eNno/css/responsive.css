@@ -1,0 +1,26 @@
+@media only screen and (max-width: 1199px) {
+  #contact iframe {
+    height: 280px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  #header #mobile-nav-open-btn {
+    display: flex;
+  }
+  #home1,
+  #about1,
+  #Services1,
+  #Portfolio1,
+  #team1,
+  #dropdown1,
+  #contact1,
+  #btn1 {
+    display: none;
+  }
+ 
+  .footer-bottom .credits ,
+  .footer-bottom .copyright {
+    float: none;
+    text-align: center;
+  }
+}

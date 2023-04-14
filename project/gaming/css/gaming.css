@@ -1,0 +1,518 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-gap {
+  padding: 100px 0;
+}
+
+.w-2 {
+  width: 50%;
+}
+
+.w-3 {
+  width: 33.33%;
+}
+
+.w-4 {
+  width: 25%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 30px;
+  padding: 8px 15px;
+  background-color: #ffb320;
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+  color: white;
+  z-index: 9;
+}
+
+.btn::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 72, 0, 0.789);
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all 1.5s;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  transform: scale(1) rotate(900deg);
+}
+
+.heading h2 {
+  font-family: "Silkscreen", cursive;
+  position: relative;
+  font-size: 35px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+/*========== header =========*/
+header {
+  background: #131313;
+  border-bottom: 2px solid #ffb320;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  padding-top: 5px;
+}
+
+header nav li {
+  padding: 25px 20px;
+}
+
+header nav .dropdown:hover .drop {
+  display: block;
+}
+
+header a,
+header h1,
+.blog-contain li span,
+.review .review-main a,
+.about,
+.about a,
+.warrior .img-contain-right p:last-child,
+.warrior .right .img-contain-right p {
+  color: white;
+  transition: all 0.5s;
+}
+
+header nav li a:hover,
+header h1 span,
+.home h1 span,
+.heading h2,
+.recent .recent-contain h5,
+.blog-contain p:last-child span,
+.warrior .img-contain-right p:first-child,
+.warrior .right .img-contain-right p:last-child,
+footer a:hover {
+  color: #ffb320;
+}
+
+header .drop {
+  position: absolute;
+  top: 100%;
+  background-color: #131313;
+  display: none;
+}
+
+header .drop li {
+  padding: 10px 40px;
+}
+
+header h1,
+.news .fix h3 {
+  font-weight: 400;
+  font-size: 25px;
+  float: left;
+  margin-left: 10px;
+}
+
+header .line {
+  width: 4px;
+  height: 30px;
+  background-color: #ffb320;
+  margin-left: 3px;
+  float: left;
+  animation: pratik 1s linear infinite;
+  transform-origin: bottom;
+}
+
+header .line:nth-child(1) {
+  animation-delay: 0s;
+  border-top-left-radius: 500px;
+}
+
+header .line:nth-child(2) {
+  animation-delay: 0.2s;
+  border-top-left-radius: 50px;
+}
+
+header .line:nth-child(3) {
+  animation-delay: 0.43s;
+  border-top-right-radius: 50px;
+}
+
+header .line:nth-child(4) {
+  animation-delay: 0.6s;
+  border-top-right-radius: 500px;
+}
+
+@keyframes pratik {
+  0% {
+    transform: scaleY(0);
+  }
+
+  50% {
+    transform: scaleY(1);
+  }
+
+  100% {
+    transform: scaleY(0);
+  }
+}
+
+/*============== home========== */
+#home {
+  width: 100%;
+  /* height: 100vh; */
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.home {
+  background-image: url(../images/game-home.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  transition: all 0.5s linear;
+}
+.home:hover {
+  transform: scale(1.1);
+  filter: brightness(1.3);
+}
+
+.home h1 {
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 30px;
+  position: relative;
+  top: 200px;
+  animation-delay: 0.5s;
+}
+
+.home p {
+  width: 600px;
+  position: relative;
+  top: 200px;
+  animation-delay: 1s;
+}
+
+.home .btn {
+  position: relative;
+  top: 250px;
+  animation-delay: 1.5s;
+}
+
+/*============ news ========== */
+.news {
+  height: 90px;
+  width: 100%;
+  background-color: #131313;
+  color: white;
+}
+
+.news .fix {
+  background-color: #ffb320;
+  height: 90px;
+}
+
+.news .marquee h3,
+.recent .recent-contain h3 {
+  display: inline-flex;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.news .marquee span,
+.about-container span,
+.heading span,
+.recent .main-recent span,
+.review .review-main h3 {
+  font-weight: 400;
+  font-size: 20px;
+  background-color: #f12043;
+  padding: 0 10px;
+  margin: 0 40px;
+  position: relative;
+  transition: all 0.5s linear;
+}
+
+.news .marquee .secend,
+.about .ac2 span,
+.about .ac4 span,
+.recent .secend span,
+.review .review-main-2 h3,
+.review .review-main-4 h3 {
+  background-color: #21e021;
+}
+
+.news .marquee .thard,
+.about .ac3 span,
+.recent .thred span,
+.review .review-main-3 h3 {
+  background-color: #9d09e2;
+}
+
+/*========= about ======= */
+.recent .main-recent span,
+.review .review-main h3 {
+  position: absolute;
+  top: 20px;
+}
+.about .about-container {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+}
+.about .overlaye {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #131313c5;
+  top: 0;
+  padding: 20px;
+}
+.about-container img {
+  
+  transition: all 0.5s linear;
+}
+.about-container:hover img {
+  transform: scale(1.2);
+}
+.about-container:hover span {
+  transform: translate(20px);
+}
+
+.about h5,
+.warrior .right .img-contain-right p:first-child,
+footer span {
+  color: #f12043;
+}
+
+.about-container h3,
+.about-container p,
+.about-container h5,
+.about-container span {
+  position: absolute;
+  bottom: 85%;
+}
+
+.about-container h3 {
+  bottom: 100px;
+  font-weight: 600;
+}
+.about-container p {
+  bottom: 50px;
+  font-size: 15px;
+}
+.about-container h5 {
+  bottom: 25px;
+}
+/*============== recent ========== */
+.recent {
+  background-image: url(../images/recent-background-2.webp);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+.recent::before {
+  content: "";
+  background-color: #131313a5;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.recent-contain {
+  background-color: #ffffff18;
+  backdrop-filter: blur(8px);
+  padding: 20px;
+  color: white;
+}
+.main-recent img {
+  position: relative;
+}
+.main-recent .leayear {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #131313d2;
+  transform: scale(0);
+  transition: all 0.2s linear;
+}
+.main-recent:hover .leayear {
+  transform: scale(1);
+}
+.recent .recent-contain button,
+.warrior .left p,
+.warrior .warrior-contain h3,
+footer a,
+.blog-contain .blog-sentex .blog-top {
+  padding: 9px 15px;
+  border: none;
+  color: white;
+}
+.recent .main-recent,
+.blog .blog-contain,
+.review .review-main,
+.warrior .warrior-contain {
+  position: relative;
+  margin: 10px;
+}
+/*============= blog ============ */
+.blog {
+  background-image: url(../images/blog-backgroundd.webp);
+  width: 100%;
+  min-height: 80vh;
+  background-attachment: fixed;
+}
+.blog .blog-contain,
+.warrior .center,
+.warrior .right,
+footer {
+  background-color: #252525;
+  padding: 38px 24px;
+}
+.blog-contain .blog-sentex,
+.warrior .img-contain-right {
+  padding: 0 0 0 20px;
+}
+.blog .blog-contain h2,
+.review .review-contain h2 {
+  color: #ffb320;
+  font-weight: 400;
+}
+.blog-contain .blog-sentex .blog-top {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  background-color: #fb6e10;
+}
+.blog-contain li,
+.blog-contain ul p,
+.warrior .img-contain-right p {
+  font-size: 12px;
+  color: #9a9a9a;
+  padding: 5px 0;
+}
+.blog-contain img {
+  filter: opacity(0.3);
+  transition: all 0.5s linear;
+}
+.blog-contain:hover img {
+  filter: opacity(1);
+}
+/*======== review ========= */
+.review {
+  background: url(../images/avenger.jpg) no-repeat 0 0;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 130vh;
+  position: relative;
+}
+.review::before {
+  position: absolute;
+  top: 0;
+  content: "";
+  background-color: #13131392;
+  width: 100%;
+  height: 100%;
+}
+.review .review-contain p,
+footer {
+  bottom: 45px;
+  font-size: 13px;
+}
+.review .review-main h3 {
+  padding: 20px;
+  top: -30px;
+  right: 38%;
+  border-radius: 50%;
+}
+.review-main:hover .review-top h3 {
+  transform: translateY(-30px);
+}
+.review-contain {
+  color: white;
+  backdrop-filter: blur(10px);
+}
+/*==== warrior ============= */
+.warrior {
+  background-image: url(../images/blog-backgroundd.webp);
+}
+.warrior .img-contain {
+  padding: 7px 0px;
+}
+.warrior .left img {
+  animation-delay: 0.5s;
+}
+.warrior .right img {
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+}

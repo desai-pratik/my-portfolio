@@ -1,0 +1,63 @@
+@media (max-width: 599px) {
+  #header #tea,
+  #header #wor,
+  #header #pric,
+  #header #contac,
+  #header #dropdown,
+  #header #glass {
+    display: none;
+  }
+  #header #mobi {
+    display: inline !important;
+  }
+  /*======home=========*/
+  #home img {
+    height: 75vh !important;
+  }
+  #home h1 {
+    bottom: 150px !important;
+  }
+
+  /*======team=========*/
+  #team #team-name {
+    flex-direction: column;
+  }
+  #team #team-name img {
+    height: 250px !important;
+    width: 250px !important;
+  }
+
+  /*======work=========*/
+  #work {
+    display: block !important;
+    height: 100% !important;
+  }
+  #work .left {
+    display: block !important;
+  }
+  #work .left img {
+    width: 100% !important;
+  }
+
+  /*======price=========*/
+  #price #down {
+    display: block !important;
+  }
+  #price #down .des {
+    width: 98% !important;
+    margin-bottom: 15px !important;
+  }
+  /*======contact=========*/
+  #contact {
+    display: block !important;
+  }
+  #contact .left {
+    position: relative !important;
+    width: 100% !important;
+    margin: 20px 20px 20px 20px !important;
+  }
+  #contact .left button {
+    position: relative !important;
+    bottom: 37px !important;
+  }
+}

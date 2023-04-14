@@ -1,0 +1,424 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+/*=========================================
+                 header
+==========================================*/
+#header ul {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: black;
+  display: flex;
+}
+#header .pratik {
+  list-style: none;
+  padding: 10px 15px;
+  color: white;
+  position: relative;
+  transition: all .5s;
+}
+#header a {
+  text-decoration: none;
+}
+#header #dropdown ul {
+  display: none;
+  width: 150px;
+  line-height: 40px;
+  position: absolute;
+  top: 37px;
+  font-size: 17px;
+  list-style: none;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(5, 4, 4, 0.22) 0px 10px 10px;
+}
+#header #logo {
+  background-color: #009688;
+}
+#header #glass {
+  position: absolute;
+  right: 0px;
+}
+#header #mobi {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 37.8px;
+  font-weight: 700;
+  display: none;
+}
+/* ------ hover -------- */
+#header ul #logo:hover {
+  color: black;
+  background-color: rgb(197, 194, 194);
+}
+#header ul #tea:hover,
+#header ul #wor:hover,
+#header ul #pric:hover,
+#header ul #contac:hover {
+  background-color: white;
+  color: black;
+}
+#header ul #dropdown:hover {
+  background-color: rgb(197, 194, 194);
+  color: black;
+}
+#header ul #mobi:hover {
+  background-color: white;
+  color: black;
+}
+#header ul #dropdown:hover ul {
+  display: block;
+}
+#header ul #dropdown li:hover {
+  background-color: rgb(197, 194, 194);
+}
+#header ul #glass:hover {
+  background-color: #009688;
+}
+/*=========================================
+                 home  
+==========================================*/
+#home img {
+  width: 100%;
+  height: 92vh;
+  object-fit: 100%;
+}
+#home h1 {
+  font-weight: 400;
+  position: absolute;
+  bottom: 58px;
+  left: 18px;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  font-size: 25px;
+}
+/* ------ hover -------- */
+#home h1:hover {
+  background-color: #009688;
+}
+/*=========================================
+                 team
+==========================================*/
+#team #heading h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  margin: 70px 0px 20px 0px;
+}
+#team #heading p {
+  text-align: center;
+  font-weight: 400;
+}
+#team #team-name {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 45px 0px 75px 0px;
+}
+#team #team-name img {
+  border-radius: 50%;
+  opacity: 0.5;
+  height: 150px;
+  width: 150px;
+}
+#team #team-name h3,
+#team #team-name p {
+  font-weight: 400;
+  margin-top: 20px;
+}
+/* ------ hover -------- */
+#team #team-name img:hover {
+  opacity: 1;
+}
+/*=========================================
+                 work
+==========================================*/
+#work {
+  position: relative;
+  display: flex;
+  background-color: rgb(68, 61, 61);
+  padding: 64px 20px 64px 20px;
+  width: 100%;
+}
+#work .right {
+  color: white;
+}
+#work .right h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+#work .right p {
+  line-height: 25px;
+  font-weight: 400;
+  margin: 20px 25px 20px 0px;
+}
+#work .left {
+  display: flex;
+}
+#work .left img {
+  width: 22vw;
+}
+#work .left .man {
+  background-color: white;
+  margin: 0px 9px 50px 9px;
+  height: 85%;
+}
+#work .left h3 {
+  padding: 20px 0px 0px 15px;
+  font-weight: 400;
+}
+#work .left h4 {
+  padding: 7px 0px 0px 15px;
+  font-weight: 500;
+}
+#work .left p {
+  padding: 7px 0px 30px 20px;
+  line-height: 30px;
+}
+#work .left .plus {
+  position: absolute;
+  bottom: -27px;
+  right: 30px;
+
+}
+#work .left .plus i {
+  font-size: 20px;
+  padding: 18px;
+  color: white;
+  border-radius: 50%;
+  background-color: #009688;
+ 
+}
+#work #qwe {
+  color: black;
+  background-color: white;
+  position: fixed;
+}
+/* ------ hover -------- */
+#work .left .plus i:hover {
+  color: black;
+  background-color: rgb(197, 194, 194);
+}
+/*=========================================
+                 PRICE
+==========================================*/
+#price #heading {
+  text-align: center;
+  font-weight: 400;
+}
+#price #heading h1 {
+  font-size: 32px;
+  font-weight: 400;
+  margin: 70px 0px 20px 0px;
+}
+#price #down {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  padding: 64px 8px 64px 8px;
+}
+#price #down .des {
+  width: 33%;
+  margin: 0px 8px 0px 8px;
+  border: 1px solid rgb(223, 219, 219);
+}
+#price #down .heading {
+  padding: 32px 0px 32px 0px;
+  color: white;
+  background-color: black;
+}
+#price #down .pro .heading {
+  background-color: rgb(119, 118, 118);
+}
+#price h5 {
+  font-size: 17px;
+  font-weight: 400;
+  padding: 15px 0px 15px 0px;
+  border-bottom: 1px solid rgb(223, 219, 219);
+}
+#price .price {
+  padding: 15px 0px 0px 0px;
+  border-bottom: 1px solid rgb(223, 219, 219);
+}
+#price .price p {
+  padding-top: 15px;
+  font-weight: 300;
+}
+#price .price h1 strong {
+  font-size: 40px;
+  font-weight: 500;
+}
+#price .button {
+  background-color: #ececec;
+  padding: 30px 0px 30px 0px;
+}
+#price .button a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 300;
+  background-color: #009688;
+  padding: 12px 20px 12px 20px;
+}
+
+/* ------ hover -------- */
+#price #down .des:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+#price .button a:hover {
+  background-color: rgb(197, 194, 194);
+  color: black;
+}
+/*================================================
+                       contact
+==================================================*/
+#contact {
+  display: inline-flex;
+  background-color: #ececec;
+  padding: 64px 0px 64px 0px;
+  width: 100%;
+}
+#contact .right h2 {
+  display: inline;
+  border-bottom: 7px solid #009688;
+  font-weight: 400;
+}
+#contact .right h3 {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 35px 0px 25px 0px;
+}
+#contact .right p {
+  letter-spacing: 1px;
+}
+#contact .right h5 i {
+  font-size: 20px;
+  margin-right: 12px;
+  color: rgb(15, 144, 146);
+}
+#contact .right h5 {
+  margin: 20px 0px 20px 0px;
+  font-weight: 400;
+  font-size: 17px;
+}
+#contact .left form {
+  background-color: white;
+  padding: 30px 20px 20px 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#contact .left label {
+  font-size: 15px;
+  font-weight: 400;
+}
+#contact .left input {
+  border: none;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  padding: 9px;
+  margin-bottom: 20px;
+}
+#contact .left .checkbox {
+   width: 25px;
+   height: 25px;
+   display: inline;
+}
+#contact .left button {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  padding: 5px 15px 5px 15px;
+  border: none;
+  position: absolute;
+  right: 35px;
+  bottom: 30px;
+}
+
+/* ------ hover -------- */
+#contact .left button:hover {
+  background-color: #c5c2c2;
+  color: black;
+}
+/*================================================
+                       map
+==================================================*/
+#map img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/*================================================
+                     footer
+==================================================*/
+#footer {
+  position: relative;
+  text-align: center;
+  background-color: black;
+  padding-top: 45px;
+}
+#footer h3 {
+  font-weight: 400;
+  color: white;
+  margin-bottom: 20px;
+}
+#footer i {
+  font-size: 17px;
+  padding: 15px;
+  color: white;
+  margin-left: 2px;
+  background-color: #009688;
+}
+
+#footer p {
+  color: white;
+  padding: 20px 0px 100px 0px;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+#footer p a {
+  color: white;
+}
+#footer #to-top i {
+  display: inline;
+  border-radius: 50%;
+  font-size: 22px;
+  color: white;
+  background-color: black;
+  padding: 15px;
+  position: absolute;
+  right: 20px;
+  top: 90px;
+}
+#footer #to-top h4 {
+  display: inline;
+  padding: 10px;
+  position: absolute;
+  right: 75px;
+  top: 94px;
+  background-color: #009688;
+  display: none;
+  font-weight: 500;
+}
+/* ------ hover -------- */
+#footer i:hover {
+  background-color: rgb(197, 194, 194);
+  color: black;
+}
+#footer #to-top i:hover {
+  border-radius: 0px;
+  background-color: rgb(197, 194, 194);
+  color: black;
+}
+#footer #to-top:hover h4 {
+  display: block;
+}
