@@ -1,10 +1,8 @@
-let yourtext = [["web Designer"], ["Photographer"], ["Developer"]];
+let yourtext = [["Front & Designer"] , ["Web Designer"] , ["Web Developer"]];
 
 let x = 0;
 let y = 0;
-//how fast typing is
 let wait = 300;
-//how long you want to text stay before overwriting
 let additionalwait = 5;
 let txt = yourtext[0][0].split("");
 let out = "";
